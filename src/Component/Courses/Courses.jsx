@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 import Course from '../Course/Course';
 import PropTypes from 'prop-types';
 
-const Courses = ({handleSelectCourses}) => {
+const Courses = ({handleSelectCourses, setLoading}) => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
     fetch('data.json')
         .then(res => res.json())
         .then(data => setCourses(data))
+        setLoading('hidden')
     }, []);
 
 
@@ -31,6 +32,7 @@ const Courses = ({handleSelectCourses}) => {
 
 Courses.propTypes = {
     handleSelectCourses : PropTypes.func.isRequired,
+    setLoading : PropTypes.string,
 };
 
 export default Courses;

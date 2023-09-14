@@ -9,6 +9,7 @@ function App() {
   const [selectCourses, setSelectCourses] = useState([]);
   const [credit, setCredit] = useState(0);
   const [remaining, setRemaining] = useState(20);
+  const [loading, setLoading] = useState('flex')
 
   const handleSelectCourses = course => {
     const have = selectCourses.find(item => item.id === course.id)
@@ -57,11 +58,16 @@ function App() {
   }
 
   return (
+    <>
+    <div className={`fixed h-screen w-screen bg-white z-50 justify-center items-center bg-opacity-90 ${loading}`}>
+      <span className="loading loading-dots loading-lg"></span>
+    </div>
     <div className='p-5 md:px-[5%]'>
       <Header/>
       <div className="flex flex-col sm:flex-row justify-center gap-5 my-10">
         <Courses
           handleSelectCourses={handleSelectCourses}
+          setLoading={setLoading}
         />
         <Cart
           selectCourses={selectCourses}
@@ -71,6 +77,7 @@ function App() {
         <ToastContainer />
       </div>
     </div>
+    </>
   )
 }
 
