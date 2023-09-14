@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import CartText from '../CartText/CartText';
 
-const Cart = ({selectCourses, credit, remaining}) => {
+const Cart = ({selectCourses, credit, remaining, total}) => {
     return (
         <div className='rounded-lg p-5 sm:w-1/2 md:w-[30%] lg:w-[22%] bg-white h-fit'>
             <h1 className='text-lg text-[#2F80ED] font-bold mb-5'>Credit Hour Remaining {remaining} hr</h1>
@@ -21,6 +21,7 @@ const Cart = ({selectCourses, credit, remaining}) => {
             <hr /><hr />
             <h1 className='text-base font-medium my-5'>Total Credit Hour: {credit}</h1>
             <hr /><hr />
+            <h1 className='text-base font-medium my-5'>Total Price: {total} USD</h1>
         </div>
     );
 };
@@ -29,6 +30,7 @@ Cart.propTypes = {
     selectCourses : PropTypes.object,
     credit : PropTypes.number,
     remaining : PropTypes.number,
+    total : PropTypes.number,
 };
 
 

@@ -9,6 +9,7 @@ function App() {
   const [selectCourses, setSelectCourses] = useState([]);
   const [credit, setCredit] = useState(0);
   const [remaining, setRemaining] = useState(20);
+  const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState('flex')
 
   const handleSelectCourses = course => {
@@ -53,6 +54,7 @@ function App() {
         setSelectCourses([...selectCourses , course])
         setRemaining(remaining - course.credit_hours)
         setCredit(credit + course.credit_hours)
+        setTotal(total + course.price)
       }
     }
   }
@@ -73,6 +75,7 @@ function App() {
           selectCourses={selectCourses}
           credit={credit}
           remaining={remaining}
+          total={total}
         />
         <ToastContainer />
       </div>
