@@ -3,7 +3,7 @@ import { BiBookOpen } from 'react-icons/bi';
 import { MdAttachMoney } from 'react-icons/md';
 
 
-const Course = ({course}) => {
+const Course = ({course , handleSelectCourses}) => {
     const {course_name, credit_hours, details, image, price} = course;
     return (
         <div className="card card-compact border-2 rounded-lg">
@@ -16,7 +16,10 @@ const Course = ({course}) => {
                 <p className='flex items-center gap-2'><BiBookOpen className='text-xl'/>Credit: {credit_hours}hr</p>
             </div>
             <div className="card-actions mt-5">
-                <button className="btn btn-primary bg-[#2F80ED] border-[#2F80ED] w-full text-white font-bold">Select</button>
+                <button 
+                    className="btn btn-primary bg-[#2F80ED] border-[#2F80ED] w-full text-white font-bold"
+                    onClick={()=> handleSelectCourses(course)}  
+                >Select</button>
             </div>
         </div>
         </div>
@@ -25,6 +28,7 @@ const Course = ({course}) => {
 
 Course.propTypes = {
     course : PropTypes.object.isRequired,
+    handleSelectCourses : PropTypes.func.isRequired,
 };
 
 export default Course;
