@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 const CartText = ({selectCourse, index}) => {
     const {course_name} = selectCourse;
     index++;
-    console.log(selectCourse);
     return (
         <div>
             <h1>{index}. {course_name}</h1>
@@ -12,7 +11,7 @@ const CartText = ({selectCourse, index}) => {
 };
 
 CartText.propTypes = {
-    selectCourse : PropTypes.array.isRequired,
+    selectCourse : PropTypes.object,
     index : PropTypes.number,
 };
 
