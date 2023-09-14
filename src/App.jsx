@@ -3,7 +3,8 @@ import './App.css'
 import Courses from './Component/Courses/Courses'
 import Header from './Component/Header/Header'
 import Cart from './Component/Cart/Cart'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const [selectCourses, setSelectCourses] = useState([]);
   const [credit, setCredit] = useState(0);
@@ -12,14 +13,42 @@ function App() {
   const handleSelectCourses = course => {
     const have = selectCourses.find(item => item.id === course.id)
     if(have){
-      return alert('already added')
+      toast.error('Already added', {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
     else{
       const nowCredit =  credit + course.credit_hours
       if(nowCredit>20){
-        return alert(`credit remaining ${remaining}hr`)
+        toast.error(`Your credit remaining ${remaining}hr`, {
+          position: "top-center",
+          autoClose: 1000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
       }
       else{
+        toast.success('👌 Successfully added', {
+          position: "top-center",
+          autoClose: 1000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
         setSelectCourses([...selectCourses , course])
         setRemaining(remaining - course.credit_hours)
         setCredit(credit + course.credit_hours)
@@ -39,6 +68,7 @@ function App() {
           credit={credit}
           remaining={remaining}
         />
+        <ToastContainer />
       </div>
     </div>
   )

@@ -31,4 +31,5 @@ Cart.propTypes = {
     remaining : PropTypes.number,
 };
 
+
 export default Cart;
