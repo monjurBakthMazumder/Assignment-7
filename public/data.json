@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "course_name": "Introduction to C Programming",
+      "credit_hours": 1,
+      "price": 15000,
+      "details": "Foundational exploration of C's syntax, logic, and principles. Equips learners with essential coding skills for software development and system-level programming.",
+      "image": "https://i.ibb.co/nRFnCrT/Rectangle-2-2.png"
+    },
+    {
+      "id": 2,
+      "course_name": "Introduction to Algorithms",
+      "credit_hours": 2,
+      "price": 25000,
+      "details": "Dive into the world of algorithm design, analysis, and implementation. Master the fundamentals for solving complex computational problems efficiently in various domains.",
+      "image": "https://i.ibb.co/jVx7FF4/Rectangle-2-3.png"
+    },
+    {
+      "id": 3,
+      "course_name": "Introduction to C++ for DSA",
+      "credit_hours": 10,
+      "price": 10000,
+      "details": "Comprehensive training bridging C++ programming and Data Structures & Algorithms. Equip yourself to develop efficient solutions for real-world programming challenges.",
+      "image": "https://i.ibb.co/xHzY4WB/Rectangle-2-4.png"
+    },
+    {
+      "id": 4,
+      "course_name": "Basic Data Structures",
+      "credit_hours": 5,
+      "price": 35000,
+      "details": "Learn essential data structures like arrays, linked lists, stacks, and queues. Build a strong foundation for efficient data organization and manipulation in programming.",
+      "image": "https://i.ibb.co/qJZmrQc/Rectangle-3.png"
+    },
+    {
+      "id": 5,
+      "course_name": "Introduction to OOP Python",
+      "credit_hours": 5,
+      "price": 19000,
+      "details": "Explore the foundations of Object-Oriented Programming (OOP) using Python. Gain skills to create modular and reusable code, fundamental for software development.",
+      "image": "https://i.ibb.co/7gxFRNn/Rectangle-2.png"
+    },
+    {
+      "id": 6,
+      "course_name": "Software Engineering",
+      "credit_hours": 2,
+      "price": 23000,
+      "details": "Delve into the principles and practices of designing, developing, and maintaining software systems. Learn methodologies and tools for efficient and reliable software development.",
+      "image": "https://i.ibb.co/Hpw3W6s/Rectangle-2-5.png"
+    },
+    {
+      "id": 7,
+      "course_name": "AWS, Cloud Computing",
+      "credit_hours": 5,
+      "price": 35000,
+      "details": "AWS Cloud Computing Course: Learn how to leverage Amazon Web Services (AWS) to deploy, manage, and scale cloud-based solutions. Gain the skills to excel in cloud computing.",
+      "image": "https://i.ibb.co/jbm22GM/Rectangle-3-1.png"
+    },
+    {
+      "id": 8,
+      "course_name": "Database (MySQL)",
+      "credit_hours": 5,
+      "price": 19000,
+      "details": "Explore the fundamentals of MySQL database management. Acquire skills in designing, querying, and administering relational databases, essential for data-driven applications and systems.",
+      "image": "https://i.ibb.co/1K85q97/Rectangle-2-1.png"
+    },
+    {
+      "id": 9,
+      "course_name": "Problem-Solving Part",
+      "credit_hours": 2,
+      "price": 23000,
+      "details": "Enhance critical thinking and analytical abilities. Develop effective strategies to tackle complex challenges, fostering creativity and practical problem-solving skills for various domains.",
+      "image": "https://i.ibb.co/kDS3hjz/Rectangle-2-6.png"
+    }
+]
