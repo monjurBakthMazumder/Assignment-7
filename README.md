@@ -1,7 +1,7 @@
 Project features
 - Here the user can select his preferred course and after selecting the preferred course, he will be able to see his remaining credit and total credit, which will help him to select the next course. Here's his total credit is 20. So, he cannot select Course more than 20 credit and cannot select a course more than once.
 - The user, however, after selecting each course, can see his total cost, how much news will be available to do his selected courses. So he will be able to select the courses of his choice according to his budget.
-- 3.Here are some very nice reaction toasts that will give him different successful and error messages with every click. For example, when the user selects a course, he will be shown a "successfully added" success toast. But when he tries to select a course more than once or more than once, it will be given an error toast of an "Already added" and if he goes to select an additional course of 20 credit, it will give him an error toast of "your credit remaining 0hr".
+- Here are some very nice reaction toasts that will give him different successful and error messages with every click. For example, when the user selects a course, he will be shown a "successfully added" success toast. But when he tries to select a course more than once or more than once, it will be given an error toast of an "Already added" and if he goes to select an additional course of 20 credit, it will give him an error toast of "your credit remaining 0hr".
 
 
 
