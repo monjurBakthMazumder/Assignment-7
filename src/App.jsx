@@ -64,7 +64,7 @@ function App() {
     <div className={`fixed h-screen w-screen bg-white z-50 justify-center items-center bg-opacity-90 ${loading}`}>
       <span className="loading loading-dots loading-lg"></span>
     </div>
-    <div className='p-5 md:px-[5%]'>
+    <div className='p-5 md:px-[5%] min-h-screen'>
       <Header/>
       <div className="flex flex-col sm:flex-row justify-center gap-5 my-10">
         <Courses

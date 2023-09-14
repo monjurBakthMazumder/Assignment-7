@@ -6,10 +6,13 @@ const Courses = ({handleSelectCourses, setLoading}) => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
-    fetch('data.json')
-        .then(res => res.json())
-        .then(data => setCourses(data))
-        setLoading('hidden')
+        setLoading('flex')
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setCourses(data))
+        setTimeout(() => {
+            setLoading('hidden')
+        }, 1000);
     }, []);
 
 
