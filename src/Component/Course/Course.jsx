@@ -6,7 +6,7 @@ import { MdAttachMoney } from 'react-icons/md';
 const Course = ({course , handleSelectCourses}) => {
     const {course_name, credit_hours, details, image, price} = course;
     return (
-        <div className="card card-compact border-2 rounded-lg">
+        <div className="card card-compact rounded-lg bg-white">
         <figure className='m-5'><img src={image} alt={`image of the course of ${course_name}`} className='w-full'/></figure>
         <div className="card-body">
             <h2 className="card-title">{course_name}</h2>

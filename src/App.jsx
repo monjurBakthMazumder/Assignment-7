@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Courses from './Component/Courses/Courses'
 import Header from './Component/Header/Header'
+import Cart from './Component/Cart/Cart'
 
 function App() {
   const [selectCourses, setSelectCourses] = useState([])
@@ -16,14 +17,15 @@ function App() {
     }
   }
 
-  console.log(selectCourses);
-
   return (
-    <div className='p-5 md:px-[10%]'>
+    <div className='p-5 md:px-[5%]'>
       <Header/>
-      <div className="flex justify-between gap-5 my-10">
+      <div className="flex justify-center gap-5 my-10">
         <Courses
           handleSelectCourses={handleSelectCourses}
+        />
+        <Cart
+          selectCourses={selectCourses}
         />
       </div>
     </div>
